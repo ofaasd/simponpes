@@ -10,7 +10,7 @@ $user = Helper_user::appClasses();
   <div class="app-brand demo">
     <a href="{{url('/')}}" class="app-brand-link">
       <span class="app-brand-logo demo">
-        <img src="https://payment.ppatq-rf.id/assets/images/logo.png" alt="" height="50">
+        <img src="{{ asset('assets/img/illustrations/logo.png') }}" alt="" height="50">
       </span>
       <span class="app-brand-text demo menu-text fw-bold ms-2">PPATQ - RF</span>
     </a>

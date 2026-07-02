@@ -33,12 +33,14 @@ $customizerHidden = 'customizer-hide';
     <!-- Login -->
     <div class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg position-relative py-sm-5 px-4 py-4">
       <div class="w-px-400 mx-auto pt-5 pt-lg-0">
-        <a href="{{url('/')}}" class="auth-cover-brand d-flex align-items-center gap-2">
-          <span class="app-brand-logo demo"><img src="https://payment.ppatq-rf.id/assets/images/logo.png" alt="" height="50"></span>
-          <span class="app-brand-text demo text-heading fw-bold">{{config('variables.templateName')}}</span>
+        <a href="{{url('/')}}" class="d-flex justify-content-center align-items-center gap-2 w-100 text-center">
+          <span class="app-brand-logo demo d-flex justify-content-center align-items-center w-100">
+            <img src="{{ asset('assets/img/illustrations/logo.png') }}" alt="" class="d-block mx-auto" style="max-width: 140px; width: 100%; height: auto; object-fit: contain;">
+          </span>
+          <!-- <span class="app-brand-text demo text-heading fw-bold" style="font-size:10pt">Sistem Informasi Manajemen Pondok Pesantren</span> -->
         </a><br />
         {{-- <h4 class="mb-2 fw-semibold">Welcome to SIMPEG {{config('variables.templateName')}}! 👋</h4> --}}
-        <h5 class="mb-2 fw-semibold">Selamat Datang di Sistem Informasi Manajemen Pengelolaan Pondok Pesantren Anak Raudlatul Falah! 👋</h5>
+        <h5 class="mb-2 fw-semibold">Selamat Datang di Sistem Informasi Manajemen Pengelolaan Pondok Pesantren</h5>
         <p class="mb-4">Please sign-in to your account and start the adventure</p>
 
         @if (session('status'))
